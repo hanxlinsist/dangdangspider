@@ -61,6 +61,7 @@ NEWSPIDER_MODULE = 'dangdangspider.spiders'
 
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
+# make item pipelines work
 ITEM_PIPELINES = {
     'dangdangspider.pipelines.DangdangspiderPipeline': 300,
 }
@@ -83,3 +84,11 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR='httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES=[]
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+# adjust the level of logging.There are five levels of logging in Scrapy, listed in order here:
+# CRITICAL
+# ERROR
+# WARNING
+# DEBUG
+# INFO
+LOG_LEVEL = 'ERROR'
